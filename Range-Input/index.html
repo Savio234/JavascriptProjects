@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Range Input</title>
+</head>
+<body>
+    
+
+    <div class="root">
+
+        <main>
+
+
+
+            <div class="relative transaction-fees">
+
+                <div class="flex flex-between relative transaction-fees-content">
+
+                    <div class="t-fees-text">
+                        <h3 class="margin-0 fees-h">
+                            Transaction Fees
+                        </h3>
+                    </div>
+    
+                    <form action="" method="post" >
+                        <div class="feesInput relative">
+                            <label for="fee" class="fee-label fees-h">Fee:</label>
+                            <input type="number" class="feesCounter" name="" id="priceInput" min="0" max="50" step="1" value="20">
+                        </div>
+    
+                        <p class="fees-input-p margin-0">
+                            $
+                        </p>
+                    </form>
+
+                </div>
+
+
+                <div class="progress">
+                    <div class="sliderProgress"></div>
+                </div>
+
+
+                <div class="second rangeScrollbar relative">
+                    <input type="range" name="" id="" class="secondInput slider" min="0" max="50" step="1">
+                </div>
+
+
+            </div>
+
+
+
+        </main>
+
+    </div>
+    
+
+
+    <script>
+        
+
+        
+        const price = document.querySelectorAll(".feesInput input");
+        const slideInput = document.querySelectorAll(".rangeScrollbar input");
+        const prog = document.querySelector(".progress .sliderProgress");
+
+        slideInput.forEach(input => {
+            input.addEventListener("input", ()=> {
+                let amount = parseInt(slideInput[0].value);
+                console.log(amount)
+                price[0].value = amount;
+
+                prog.style.right = 100 - (amount / slideInput[0].max) * 100 + "%";
+            })
+        });
+           
+
+
+        
+    </script>       
+
+            
+
+
+    
+        
+
+    
+
+
+</body>
+</html>
