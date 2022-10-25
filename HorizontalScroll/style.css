@@ -1,0 +1,260 @@
+.create-and-sell-container {
+    margin: 0 0 14.6rem 2rem;
+}
+.cards-container {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: flex;
+}
+video {
+    width: 100%;
+    height: 100%;
+}
+.cards-container::-webkit-scrollbar {
+    display: none;
+}
+.create-and-sell-card, .stepsCard {
+    width: 140rem;
+    height: 100vh;
+    border-radius: 2.4rem;
+}
+.similar-cards {
+    display: flex;
+}
+.create-and-sell-btn {
+    width: 16.3rem;
+    height: 5.6rem;
+    border-radius: 10rem;
+    background: #ea445a;
+    padding: 1.6rem 3.2rem;
+    gap: 1.6rem;
+}
+.connect-wallet-line svg {
+    position: absolute;
+    top: 9.4rem;
+    left: 25.8rem;
+}
+.create-ticket-line {
+    position: absolute;
+    top: 6rem;
+    left: 0;
+}
+.list-ticket-line {
+    position: absolute;
+    top: 7rem;
+    left: 0;
+}
+.connect-wallet {
+    background: #06060b;
+    position: absolute;
+    top: 0;
+    left: 4rem;
+}
+.connect-wallet:nth-child(2) {
+    background: #c81030;
+    position: absolute;
+    top: 0;
+    left: 149rem;
+}
+.connect-wallet:nth-child(3) {
+    background: #5d82f1;
+    position: absolute;
+    top: 0;
+    left: 293rem;
+}
+.connect-wallet {
+    align-items: center;
+    align-content: center;
+    padding: 0 9.6rem;
+}
+.three-easy-steps-img {
+    width: 31rem;
+    height: 15rem;
+}
+.three-easy-steps-header {
+    width: 84rem;
+    margin: 2.4rem 0 2.6rem;
+    padding-left: 8rem;
+}
+.three-easy-steps-h {
+    font-family: GilroyB;
+    font-size: 8.8rem;
+    line-height: 11rem;
+    font-weight: 800;
+    color: #fff;
+}
+.create-and-sell-btn {
+    margin-left: 8rem;
+}
+.number-one-container {
+    width: 8rem;
+    height: 8rem;
+    border-radius: .8rem;
+    padding-top: .5rem;
+}
+.number-one-h {
+    font-family: Aventa;
+    font-size: 4.8rem;
+    line-height: 5.9rem;
+    font-weight: 400;
+    color: #fbfbfd;
+}
+.connect-wallet-header {
+    margin: 2.4rem 0;
+    width: 52rem;
+}
+.connect-wallet-h {
+    font-family: GilroyB;
+    font-weight: 700;
+    font-size: 6.4rem;
+    line-height: 7.9rem;
+    color: #fbfbfd;
+}
+.connect-wallet-h:nth-child(3) {
+    line-height: 6.4rem;
+}
+.connect-wallet-text {
+    width: 41rem;
+}
+.connect-wallet-p {
+    font-family: Aventa;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #fbfbfb;
+    letter-spacing: 0.01rem;
+}
+.connect-wallet-img {
+    width: 59.8rem;
+    height: 37.3rem;
+    background: #fbfbfd;
+    border-radius: .8rem;
+    padding: 2.4rem 1.6rem;
+}
+.connect-wallet-img:nth-child(3) {
+    width: 59.8rem;
+    height: 37.3rem;
+}
+.event-managers-video {
+    width: 56.6rem;
+    height: 32.5rem;
+}
+.event-managers-video:nth-child(3) {
+    width: 56.6rem;
+    height: 32.5rem;
+}
+
+
+@media screen and (max-width: 1023px){
+    .list-ticket-line {
+        top: 2rem;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .create-and-sell-container {
+        margin: 0 0 6.4rem 4rem;
+    }
+    .cards-container, .similar-cards {
+        overflow-x: hidden;
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .create-and-sell-btn {
+        width: 32.7rem;
+        padding: 0 11rem;
+        margin: auto;
+    }
+    .three-easy-steps {
+        margin-left: 0;
+        background-position: 0 0;
+    }
+    .three-easy-steps-img {
+        display: none;
+    }
+    .three-easy-steps-header {
+        width: 35rem;
+        text-align: center;
+        margin: 18.4rem auto 5.6rem;
+        padding-left: 0;
+    }
+    .three-easy-steps-h {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+    }
+    .stepsCard {
+        width: 45rem;
+        height: 55.3rem;
+    }
+    .connect-wallet, .connect-wallet:nth-child(2), .connect-wallet:nth-child(3) {
+        flex-direction: column;
+        padding: 0 2rem;
+        position: relative;
+        left: 0;
+        background-image: none;
+    }
+    .connect-wallet-img, .connect-wallet-img:nth-child(2), .connect-wallet-img:nth-child(3) {
+        width: 42.5rem;
+        height: 40.5rem;
+        margin-bottom: 5.7rem;
+        padding: .8rem;
+    }
+    .connect-wallet-picture {
+        display: none;
+    }
+    .event-managers-video {
+        width: 40.9rem;
+        height: 23.9rem;
+    }
+    .connect-wallet-header {
+        width: 45rem;
+        margin: 2.4rem 0 2.4rem 4rem;
+    }
+    .connect-wallet-text {
+        width: 29.5rem;
+        margin: 0 0 4rem 4rem;
+    }
+    .connect-wallet-h {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+    }
+    .connect-wallet-p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    .create-ticket-video {
+        width: 20rem;
+        height: 25rem;
+    }
+    .create-ticket-img {
+        width: 20.5rem;
+        height: 27rem;
+    }
+    .number-one-container {
+        width: 5.6rem;
+        height: 5.6rem;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        margin: 4rem 0 0 4rem;
+    }
+    .number-one-h {
+        font-size: 2.4rem;
+        line-height: 3rem;
+        padding-top: .4rem;
+    }
+    .create-and-sell-card svg {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 485px){
+    .create-and-sell-container {
+        margin-left: 0;
+    }
+}
